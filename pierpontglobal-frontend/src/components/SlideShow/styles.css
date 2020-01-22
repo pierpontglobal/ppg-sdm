@@ -1,0 +1,44 @@
+.carousel-control {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.carousel-control span {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.carousel-control:hover span {
+    opacity: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.carousel-inner {
+    width: 212px !important;
+    height: 120px;
+}
+
+.item {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+
+.active {
+    opacity: 1;
+}
+

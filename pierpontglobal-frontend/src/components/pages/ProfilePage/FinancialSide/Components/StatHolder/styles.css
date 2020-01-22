@@ -1,0 +1,31 @@
+.stat-holder {
+    background-color: #fafafa !important;
+    margin: 10px !important;
+    max-width: 270px !important;
+}
+
+.stat-holder > div {
+    width: 100%;
+    min-width: 250px !important;
+    min-height: 100px !important;
+    padding: 15px;
+}
+
+.stat-holder * {
+    color: rgb(114, 114, 114) !important;
+}
+
+.stat-holder i {
+    font-size: 36px;
+}
+
+.accent {
+    color: #10b364 !important;
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+  
+@media only screen and (min-width: 768px) {
+}

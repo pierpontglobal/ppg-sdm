@@ -1,0 +1,12 @@
+.auction-detail-name {
+    width: 200px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: 200;
+    float: left;
+}
+
+.auction-detail-conatiner {
+    width: 100%;
+    overflow: hidden;
+}

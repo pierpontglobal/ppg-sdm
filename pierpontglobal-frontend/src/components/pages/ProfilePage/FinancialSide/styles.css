@@ -1,0 +1,13 @@
+.container-financial {
+    padding-left: 20px;
+}
+
+.financial-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

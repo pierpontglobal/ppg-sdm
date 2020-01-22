@@ -1,0 +1,39 @@
+.progressSection:hover {
+    border: 2px #FFFFFF dashed !important;
+    position: relative;
+}
+
+.progressSection:hover::before {
+    content: attr(data-content);
+    padding: 4px;
+    border-radius: 4px;
+    width: 170px;
+    color: white;
+    background-color: rgb(59, 68, 75);
+    position: absolute;
+    top: -35px;
+    text-align: center;
+    left: 0;
+    font-weight: 200;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+}
+
+.progressSection:hover::after {
+    content: '';
+    top: -15px;
+    left: 0;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    font-weight: 200;
+    width: 0; 
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    color: white;
+    
+    border-top: 20px solid rgb(59, 68, 75);
+}

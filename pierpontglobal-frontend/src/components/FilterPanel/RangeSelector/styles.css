@@ -1,0 +1,43 @@
+
+
+  .indicator {
+      cursor: pointer;
+  }
+
+  .indicator::after {
+      content: "";
+      width: 2px;
+      background: rgb(59, 68, 75);
+      height: 20px;
+      position: absolute;
+      top: -20px;
+      right: 0;
+  }
+
+  .column-item::after {
+      content: attr(data-content);
+      font-size: 9px;
+      color: black;
+      font-weight: 500;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      top: -20px;
+  }
+
+  .column-item {
+    background-color: rgba(59, 68, 75, 0.5)
+}
+
+  .column-item:hover {
+      background-color: rgba(59, 68, 75, 0.7) !important;
+  }
+
+
+  .column-item:hover::after {
+    font-weight: 900
+}

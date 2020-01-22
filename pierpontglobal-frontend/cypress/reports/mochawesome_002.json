@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-05-17T21:17:18.594Z",
+    "end": "2019-05-17T21:17:21.345Z",
+    "duration": 2751,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "6b89d00b-f958-478d-b025-464db0647703",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "821f0086-73f9-4dce-92cf-f005bef8ad51",
+        "title": "Marketplace page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Sample test with secure route renders it",
+            "fullTitle": "Marketplace page Sample test with secure route renders it",
+            "duration": 2642,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.visit(_functions.default.marketplace);",
+            "err": {
+              "message": "CypressError: cy.request() failed on:\n\nhttp://0.0.0.0:3000/api/v2/users/login\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not '2xx' or '3xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://0.0.0.0:3000/api/v2/users/login\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/3.3.0 Chrome/61.0.3163.100 Electron/2.0.18 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 49\n}\nBody: {\"username\":\"leinadpyarnb\",\"password\":\"admin123\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"cache-control\": \"private, no-store\",\n  \"pragma\": \"no-cache\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"www-authenticate\": \"Bearer realm=\\\"Doorkeeper\\\", error=\\\"invalid_request\\\", error_description=\\\"The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.\\\"\",\n  \"x-request-id\": \"bce78cc3-15d2-4e67-a96c-2ba3612e0442\",\n  \"x-runtime\": \"0.040621\",\n  \"vary\": \"Origin\",\n  \"transfer-encoding\": \"chunked\"\n}\nBody: {\n  \"error\": \"invalid_request\",\n  \"error_description\": \"The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.\"\n}\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Marketplace page'",
+              "estack": "CypressError: cy.request() failed on:\n\nhttp://0.0.0.0:3000/api/v2/users/login\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not '2xx' or '3xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://0.0.0.0:3000/api/v2/users/login\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/3.3.0 Chrome/61.0.3163.100 Electron/2.0.18 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 49\n}\nBody: {\"username\":\"leinadpyarnb\",\"password\":\"admin123\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"cache-control\": \"private, no-store\",\n  \"pragma\": \"no-cache\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"www-authenticate\": \"Bearer realm=\\\"Doorkeeper\\\", error=\\\"invalid_request\\\", error_description=\\\"The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.\\\"\",\n  \"x-request-id\": \"bce78cc3-15d2-4e67-a96c-2ba3612e0442\",\n  \"x-runtime\": \"0.040621\",\n  \"vary\": \"Origin\",\n  \"transfer-encoding\": \"chunked\"\n}\nBody: {\n  \"error\": \"invalid_request\",\n  \"error_description\": \"The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.\"\n}\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Marketplace page'\n    at Object.cypressErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83139:11)\n    at Object.throwErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83104:18)\n    at Object.throwErrByPath (http://localhost:4000/__cypress/runner/cypress_runner.js:83131:17)\n    at http://localhost:4000/__cypress/runner/cypress_runner.js:74312:20\n    at tryCatcher (http://localhost:4000/__cypress/runner/cypress_runner.js:132036:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4000/__cypress/runner/cypress_runner.js:130054:31)\n    at Promise._settlePromise (http://localhost:4000/__cypress/runner/cypress_runner.js:130111:18)\n    at Promise._settlePromise0 (http://localhost:4000/__cypress/runner/cypress_runner.js:130156:10)\n    at Promise._settlePromises (http://localhost:4000/__cypress/runner/cypress_runner.js:130235:18)\n    at Async._drainQueue (http://localhost:4000/__cypress/runner/cypress_runner.js:126960:16)\n    at Async._drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126970:10)\n    at Async.drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126844:14)\n    at <anonymous>"
+            },
+            "isRoot": false,
+            "uuid": "b7d1d0bc-9b26-4a15-a439-e1b682632d40",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "b7d1d0bc-9b26-4a15-a439-e1b682632d40"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 2642,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

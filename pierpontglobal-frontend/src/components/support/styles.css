@@ -1,0 +1,35 @@
+.sign_in_button {
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    display: none;
+}
+
+#inner-sign-in-icon{
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .sign_in_button {
+        display: inline;
+        color: #ffffff;
+        background-color: #3e78c0;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        padding: 10px;
+        min-width: 130px;
+        align-content: center;
+        justify-content: center;
+    }
+}
+  
+@media only screen and (min-width: 768px) {
+}

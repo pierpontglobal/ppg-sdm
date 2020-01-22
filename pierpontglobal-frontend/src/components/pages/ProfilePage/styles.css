@@ -1,0 +1,31 @@
+.pannel-container {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    left: 0;
+    top: 0;
+    padding-top: 55px;
+}
+
+.flex-modifier-user-view {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-page-content-container {
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    .flex-modifier-user-view {
+        flex-direction: row;
+        align-items: inherit;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .user-page-content-container {
+        margin-left: 300px;
+    }
+}

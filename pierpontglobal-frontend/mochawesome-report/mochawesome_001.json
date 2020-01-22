@@ -1,0 +1,99 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2019-05-20T15:42:16.222Z",
+    "end": "2019-05-20T15:42:50.165Z",
+    "duration": 33943,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "2105ca1d-1962-4bcc-b1db-793e5c68eb94",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "97b79a95-51c1-494c-afdb-399f5ee0b56d",
+        "title": "Login modal",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "User can login",
+            "fullTitle": "Login modal User can login",
+            "duration": 14841,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.visit('/?signIn=true');\ncy.get('[data-cy=username]').type(Cypress.env('username'));\ncy.get('[data-cy=password]').type(Cypress.env('password')); // cy.get('[data-cy=submit-login]').click();    // PLEASE, UNCOMMENT THIS LINE AFTER BACKEND FOR   GET /user   has been fixed.\n// cy.url().should('include', '/user');         // PLEASE, UNCOMMENT THIS LINE AFTER BACKEND FOR   GET /user   has been fixed.",
+            "err": {
+              "message": "CypressError: Timed out after waiting '12000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '12000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.",
+              "estack": "CypressError: Timed out after waiting '12000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '12000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.\n    at Object.cypressErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83139:11)\n    at Object.throwErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83104:18)\n    at Object.throwErrByPath (http://localhost:4000/__cypress/runner/cypress_runner.js:83131:17)\n    at timedOutWaitingForPageLoad (http://localhost:4000/__cypress/runner/cypress_runner.js:72930:17)\n    at http://localhost:4000/__cypress/runner/cypress_runner.js:73594:18\n    at tryCatcher (http://localhost:4000/__cypress/runner/cypress_runner.js:132036:23)\n    at http://localhost:4000/__cypress/runner/cypress_runner.js:127346:41\n    at tryCatcher (http://localhost:4000/__cypress/runner/cypress_runner.js:132036:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4000/__cypress/runner/cypress_runner.js:130054:31)\n    at Promise._settlePromise (http://localhost:4000/__cypress/runner/cypress_runner.js:130111:18)\n    at Promise._settlePromise0 (http://localhost:4000/__cypress/runner/cypress_runner.js:130156:10)\n    at Promise._settlePromises (http://localhost:4000/__cypress/runner/cypress_runner.js:130231:18)\n    at Async._drainQueue (http://localhost:4000/__cypress/runner/cypress_runner.js:126960:16)\n    at Async._drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126970:10)\n    at Async.drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126844:14)\n    at <anonymous>"
+            },
+            "isRoot": false,
+            "uuid": "205816ca-892e-4820-9071-6f24e353c7bf",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "User cannot login due to invalid credentials",
+            "fullTitle": "Login modal User cannot login due to invalid credentials",
+            "duration": 17347,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.visit('/?signIn=true');\ncy.get('[data-cy=username]').type(Cypress.env('username'));\ncy.get('[data-cy=password]').type(Cypress.env('password') + '7'); //  + '7' on purpose to fail the login\ncy.get('[data-cy=submit-login]').click();\nassert.isTrue(true, (0, _functions.urlIncludes)('/user'));",
+            "err": {
+              "message": "CypressError: Timed out after waiting '12000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '12000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.",
+              "estack": "CypressError: Timed out after waiting '12000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '12000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.\n    at Object.cypressErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83139:11)\n    at Object.throwErr (http://localhost:4000/__cypress/runner/cypress_runner.js:83104:18)\n    at Object.throwErrByPath (http://localhost:4000/__cypress/runner/cypress_runner.js:83131:17)\n    at timedOutWaitingForPageLoad (http://localhost:4000/__cypress/runner/cypress_runner.js:72930:17)\n    at http://localhost:4000/__cypress/runner/cypress_runner.js:73594:18\n    at tryCatcher (http://localhost:4000/__cypress/runner/cypress_runner.js:132036:23)\n    at http://localhost:4000/__cypress/runner/cypress_runner.js:127346:41\n    at tryCatcher (http://localhost:4000/__cypress/runner/cypress_runner.js:132036:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4000/__cypress/runner/cypress_runner.js:130054:31)\n    at Promise._settlePromise (http://localhost:4000/__cypress/runner/cypress_runner.js:130111:18)\n    at Promise._settlePromise0 (http://localhost:4000/__cypress/runner/cypress_runner.js:130156:10)\n    at Promise._settlePromises (http://localhost:4000/__cypress/runner/cypress_runner.js:130231:18)\n    at Async._drainQueue (http://localhost:4000/__cypress/runner/cypress_runner.js:126960:16)\n    at Async._drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126970:10)\n    at Async.drainQueues (http://localhost:4000/__cypress/runner/cypress_runner.js:126844:14)\n    at <anonymous>"
+            },
+            "isRoot": false,
+            "uuid": "09825bb6-9175-4150-b04b-efd153f89ac5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "205816ca-892e-4820-9071-6f24e353c7bf",
+          "09825bb6-9175-4150-b04b-efd153f89ac5"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 32188,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

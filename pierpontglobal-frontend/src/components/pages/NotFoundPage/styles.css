@@ -1,0 +1,14 @@
+.center-holder {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+}
+
+span.big-text {
+    font-size: 100pt;
+}

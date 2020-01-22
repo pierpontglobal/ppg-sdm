@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="manifest" href="/manifest.json">
+
+  <title>Pierpont Global</title>
+  <meta name="Description"
+    content="A platform designed to make buying vehicles much easier. Our platform ties together thousands of listings, from dozens of Manheim Auction locations, giving you access to infinitely more vehicle options to buy from. Bid on vehicles right from your computer. Using our provided pricing information and condition reports, you’ll have all the info you need to place well calculated bids. We handle the process of delivering the vehicles from the auction to your near port, while giving you tracking updates along the way. We will get you the best ground transport rates, shipping rates, as well as import customs and tax rates. With all invoices provided in real time.">
+  <meta name="google-site-verification" content="lsw97pt4ncfBfZdZAAQXNh1KIbzjEEJEl9hST-f3UCY" />
+
+  <link rel='dns-prefetch' href="https://cdn.iubenda.com/iubenda.js" />
+
+  <script src="https://js.stripe.com/v3/" onerror="onStripeLoadError()"></script>
+
+  <link rel="manifest" href="/manifest.json" />
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body style="font-family: 'Raleway', sans-serif;">
+  <div id="root">
+    <noscript>
+      <h1
+        style="position: absolute; top: 0; right: 0; left: 0; margin: 0 auto; text-align: center; text-decoration: underline;">
+        This app rely on JavaScript please upgrade your device</h1>
+    </noscript>
+    <div class="full-page-loader">
+
+      <script>
+        function reload_cache() {
+          navigator.serviceWorker.getRegistration().then((ost) => ost.unregister());
+          window.location.reload(true);
+        }
+
+        window.fallbackReload = setTimeout(reload_cache, 5000);
+      </script>
+
+      <style>
+        .full-page-loader {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+        }
+
+        .full-page-loader>img {
+          animation: 1.8s infinite heartbeat;
+        }
+
+        @keyframes heartbeat {
+          0% {
+            transform: scale(1);
+          }
+
+          25% {
+            transform: scale(1.05);
+          }
+
+          50% {
+            transform: scale(1);
+          }
+
+          75% {
+            transform: scale(1.05);
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+      </style>
+      <img width="200" src="/logos/loading_logo.png" alt="PierpontGlobal logo" />
+    </div>
+  </div>
+</body>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Raleway:400,200">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script async type="text/javascript">
+  (function (w, d) {
+    var loader = function () {
+      var s = d.createElement("script"),
+        tag = d.getElementsByTagName("script")[0];
+      s.src = "https://cdn.iubenda.com/iubenda.js";
+      tag.parentNode.insertBefore(s, tag);
+    };
+    if (w.addEventListener) {
+      w.addEventListener("load", loader, false);
+    } else if (w.attachEvent) {
+      w.attachEvent("onload", loader);
+    } else {
+      w.onload = loader;
+    }
+  })(window, document);
+
+  function onStripeLoadError() {
+    console.log('Please, check your internet connection.')
+  }
+</script>
+
+</html>

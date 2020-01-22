@@ -1,0 +1,70 @@
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loading {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.wrong-cre {
+  border: 1px solid #ca0000 !important
+}
+
+.my-modal-main {
+  overflow: hidden;
+  width: 100%;
+  height: 100% !important;
+}
+
+.phone-only {
+  display: inherit;
+}
+
+.tablet-only {
+  display: inherit;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.tablet-up {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .my-modal-main {
+    width: 352px;
+    height: 320px !important;
+    border-radius: 7px;
+    overflow: hidden;
+    min-height: auto;
+  }
+
+  .tablet-up {
+    display: inherit;
+  }
+
+  .phone-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: inherit;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+}

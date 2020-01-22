@@ -1,0 +1,10 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("JOB_WORKER_URL") %>
+  channel_prefix: pierpontglobal-api_production

@@ -1,0 +1,155 @@
+.SettingEditIcon:hover {
+    cursor: pointer;
+}
+
+.card-holder-large {
+    font-weight: 200;
+}
+
+.card-holder-large div {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card-holder-large div span {
+    margin: 0 20px;
+}
+
+.card-holder-large div span.last {
+    margin-left: auto;
+}
+
+.simple-view {
+    border: none;
+    font-size: 12px;
+}
+
+.clean-button i {
+    background-color: white;
+    box-shadow: none;
+}
+
+@-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to { 
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+.loading {
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         0.5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function:  linear;
+}
+
+.menu .item {
+    opacity: 1;
+}
+
+.content-holder-box {
+    margin-bottom: 20px;
+    border-radius: 10px !important;
+}
+
+.content-holder-box .content-main {
+    margin: 20px;
+}
+
+.button_white {
+    background-color: white;
+    transition: 0.5s;
+    position: relative;
+}
+
+.button_white:hover {
+    background-color: #fafafa !important
+}
+
+.button_white:disabled {
+    background-color: #f3f0f0 !important;
+    cursor: not-allowed !important;
+}
+
+.button_white:disabled:hover::after {
+    content: attr(data-disabled-text);
+    position: absolute;
+    top: 0;
+    width: max-content;
+    /* Firefox */
+    right: -moz-calc(100% + 20px);
+    /* WebKit */
+    right: -webkit-calc(100% + 20px);
+    /* Opera */
+    right: -o-calc(100% + 20px);
+    /* Standard */
+    right: calc(100% + 20px);
+    bottom: 0;
+    font-size: 12px;
+    margin: auto 0;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    
+}
+
+.green_button {
+    background-color: #10b364;
+    transition: 0.5s;
+}
+
+.green_button:hover {
+    background-color: #0d864c !important;
+}
+
+
+
+/* CANVAS STYLES */
+
+.phone-only {
+  display: inherit;
+}
+
+.tablet-only {
+  display: inherit;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.tablet-up {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .my-modal-main {
+    width: 352px;
+    height: 320px !important;
+    border-radius: 7px;
+    overflow: hidden;
+    min-height: auto;
+  }
+
+  .tablet-up {
+    display: inherit;
+  }
+
+  .phone-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: inherit;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+}

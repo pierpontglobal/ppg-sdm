@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://localhost:4000",
+  "pageLoadTimeout": 12000,
+  "env": {
+    "username": "leinadpb1",
+    "password": "admin123",
+    "apiUrl": "http://0.0.0.0:3000"
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}

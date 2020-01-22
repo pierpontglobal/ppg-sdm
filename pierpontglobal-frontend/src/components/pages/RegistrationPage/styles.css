@@ -1,0 +1,82 @@
+.registration-bg {
+    background-color: rgb(58, 62, 67);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    padding-top: 70px;
+    padding: 70px 10px 10px 10px;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container-2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.item-5 {
+    position: relative;
+    width: 90%;
+    min-height: 400px;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.ReactPasswordStrength {
+    border-width: 0;
+}
+
+.ReactPasswordStrength-strength-desc {
+    display: none;
+}
+
+.big-logo {
+    width: 90%;
+}
+
+.registration-form {
+    margin-top: 40px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .container-2 {
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .registration-form {
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .item-5 {
+        height: 100%;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}

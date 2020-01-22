@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-05-17T21:17:06.857Z",
+    "end": "2019-05-17T21:17:12.344Z",
+    "duration": 5487,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "33e8807a-2065-43df-a454-13bba6b0520b",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "123c171a-fbc4-43fc-9431-d14fc9b79546",
+        "title": "Login modal",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "User can login",
+            "fullTitle": "Login modal User can login",
+            "duration": 3274,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit('/?signIn=true');\ncy.get('[data-cy=username]').type(Cypress.env('username'));\ncy.get('[data-cy=password]').type(Cypress.env('password')); // cy.get('[data-cy=submit-login]').click();    // PLEASE, UNCOMMENT THIS LINE AFTER BACKEND FOR   GET /user   has been fixed.\n// cy.url().should('include', '/user');         // PLEASE, UNCOMMENT THIS LINE AFTER BACKEND FOR   GET /user   has been fixed.",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5805878d-750c-421f-963c-5d2154eb4449",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "User cannot login due to invalid credentials",
+            "fullTitle": "Login modal User cannot login due to invalid credentials",
+            "duration": 2118,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit('/?signIn=true');\ncy.get('[data-cy=username]').type(Cypress.env('username'));\ncy.get('[data-cy=password]').type(Cypress.env('password') + '7'); //  + '7' on purpose to fail the login\ncy.get('[data-cy=submit-login]').click();\nassert.isTrue(true, (0, _functions.urlIncludes)('/user'));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "2e08b66d-74ea-4a34-a4c8-563a4fcc168d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5805878d-750c-421f-963c-5d2154eb4449",
+          "2e08b66d-74ea-4a34-a4c8-563a4fcc168d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 5392,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

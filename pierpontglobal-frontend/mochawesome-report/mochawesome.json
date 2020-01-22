@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-05-20T15:41:49.874Z",
+    "end": "2019-05-20T15:42:06.241Z",
+    "duration": 16367,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "17b69965-10d9-47c5-8a0e-bd6de4ca307d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "34875bae-25e0-4f8b-ad29-ea707e1b45a8",
+        "title": "Secure routes should redirects user to Home page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Navigate to Marketplace without logged in, should redirect to Home page.",
+            "fullTitle": "Secure routes should redirects user to Home page Navigate to Marketplace without logged in, should redirect to Home page.",
+            "duration": 9029,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit('/');\ncy.get('[data-cy=navbar-marketplace]').click();\ncy.wait(600); // Waits for redirection\ncy.url().should('include', _Routes.default.home); // Test if login modal appears too\ncy.url().should('include', 'signIn=true');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "74612a79-2efe-4816-8773-abc425107c21",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Navigate to Profile without logged in, should redirect to Home page",
+            "fullTitle": "Secure routes should redirects user to Home page Navigate to Profile without logged in, should redirect to Home page",
+            "duration": 4672,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit(\"\".concat(Cypress.config().baseUrl + _Routes.default.profilePage));\ncy.wait(600); // Waits for redirection\ncy.url().should('include', _Routes.default.home); // Test if login modal appears too\ncy.url().should('include', 'signIn=true');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "8433f666-f545-4e61-ad8d-f9fb8ab507d0",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "74612a79-2efe-4816-8773-abc425107c21",
+          "8433f666-f545-4e61-ad8d-f9fb8ab507d0"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 13701,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "3f54a147-d89f-42aa-84c7-d4e1551f442c",
+        "title": "Unsecure routes should render properly",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Navigate to Contact page should render it.",
+            "fullTitle": "Unsecure routes should render properly Navigate to Contact page should render it.",
+            "duration": 2299,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit('/');\ncy.get('[data-cy=navbar-contact]').click();\ncy.wait(600); // Waits for redirection\ncy.url().should('include', _Routes.default.contactPage);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e3c6d234-c069-434c-af4c-8ad05ff1bfa5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e3c6d234-c069-434c-af4c-8ad05ff1bfa5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2299,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

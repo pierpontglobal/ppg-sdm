@@ -1,0 +1,42 @@
+.menu-sider {
+    display: none;
+}
+
+.nav-items {
+    display: flex;
+    place-content: space-between;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.web-logo {
+    width: 40%;
+    position: fixed;
+    left: 50%;
+    margin-left: -20%;
+}
+
+@media only screen and (min-width: 600px) {
+}
+  
+@media only screen and (min-width: 768px) {
+    .menu-sider {
+        display: flex;
+        width: 320px;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .web-logo {
+        position: relative;
+        width: auto;
+        left: auto;
+        margin: 0;
+    }
+}

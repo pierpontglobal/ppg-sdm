@@ -1,0 +1,22 @@
+#priceBreackDown-1 {
+    width: 330px;
+}
+
+#priceBreackDown-1-heading {
+    height: 60px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+#priceBreackDown-1-body {
+    padding: 20px;
+}
+
+#priceBreackDown-1-body span.last-in-row {
+    float: right;
+}
